@@ -17,7 +17,7 @@ class _AwesomeWeatherState extends State<AwesomeWeather> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: _CustomAppBar(),
+        appBar: _CustomAppBar(_weatherHomePageStore),
         body: Container(
           alignment: Alignment.center,
           decoration: BoxDecoration(
@@ -302,7 +302,9 @@ class _AwesomeWeatherState extends State<AwesomeWeather> {
 }
 
 class _CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
-  final WeatherHomePageStore _weatherHomePageStore = WeatherHomePageStore();
+  final WeatherHomePageStore weatherHomePageStore;
+
+  _CustomAppBar(this.weatherHomePageStore);
 
   @override
   Size get preferredSize => Size.fromHeight(kToolbarHeight);
@@ -320,21 +322,20 @@ class _CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         child: Observer(builder: (context) {
           return TextField(
             keyboardType: TextInputType.text,
-            controller: _weatherHomePageStore.cityController,
+            controller: weatherHomePageStore.cityController,
             decoration: InputDecoration(
               prefixIcon: IconButton(
                 icon: Icon(Icons.search),
                 onPressed: () {
-                  _weatherHomePageStore
-                      .getWeather(_weatherHomePageStore.cityController.text);
-                  _weatherHomePageStore.cityController.clear();
+                  weatherHomePageStore.getWeather(weatherHomePageStore.cityController.text);
+                  weatherHomePageStore.cityController.clear();
                   FocusScope.of(context).unfocus();
                 },
               ),
               suffixIcon: IconButton(
                 icon: Icon(Icons.clear),
                 onPressed: () {
-                  _weatherHomePageStore.cityController.clear();
+                  weatherHomePageStore.cityController.clear();
                 },
               ),
               hintText: 'Search city...',
