@@ -4,10 +4,7 @@ I made this app using flutter and Clean Architecture concepts.
 Below you can see a exemple of success and error.
 
 
-![image](https://user-images.githubusercontent.com/30161039/159821040-d033b587-4710-4fa3-999c-e1afddac0487.png)
--
-
-![image](https://user-images.githubusercontent.com/30161039/159821054-61853fcc-fdea-4a87-a4b6-d279b537cf96.png)
+-![awesome_weather](https://user-images.githubusercontent.com/30161039/159821915-6ef70114-23a6-43ce-b124-bac88ba3fc07.gif)
 
 
 
