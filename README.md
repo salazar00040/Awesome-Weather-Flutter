@@ -2,6 +2,12 @@
 
 Awesome Weather
 
+![image](https://user-images.githubusercontent.com/30161039/159821040-d033b587-4710-4fa3-999c-e1afddac0487.png)
+-
+![image](https://user-images.githubusercontent.com/30161039/159821054-61853fcc-fdea-4a87-a4b6-d279b537cf96.png)
+
+
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
