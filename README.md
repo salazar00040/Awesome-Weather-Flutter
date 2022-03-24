@@ -1,6 +1,11 @@
 # awesome_weather
 
-Awesome Weather
+I made this app using flutter and Clean Architecture concepts.
+Below you can see a exemple of success and error.
+
+<img src="https://user-images.githubusercontent.com/30161039/159821915-6ef70114-23a6-43ce-b124-bac88ba3fc07.gif" width="600" height="1000">
+
+
 
 ## Getting Started
 
